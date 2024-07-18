@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* moblie Mode */
+.bottom-header {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff; 
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    box-shadow: 0px 0px 1px;
+    /* border-top: solid black 1px; */
+    display: none;
+}
+
+.button {
+    color: black; 
+    text-align: center;
+    flex: 1;
+    cursor: pointer;
+    position: relative; 
+    padding: 1px; 
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Dark Mode */
+body.dark-mode .bottom-header {
+    background-color: #2f2f2f; 
+}
+
+body.dark-mode .button {
+    color: #bdbdbd; 
+}
+
+.icon {
+    display: block;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+/* Default Mode Icon Color */
+.icon {
+    color: black; 
+}
+
+/* Dark Mode Icon Color */
+body.dark-mode .icon {
+    color: #bdbdbd; 
+}
+
+/* Highlight Color for Active State */
+body.dark-mode .button.active .icon,
+body.dark-mode .button.active span,
+body.dark-mode .button:hover .icon,
+body.dark-mode .button:hover span {
+    color: white;
+}
+
+.button span {
+    display: block;
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    transition: color 0.3s ease;
+}
+
+.button:hover {
+    color: black; 
+    background-color: transparent; 
+    border-radius: 4px; 
+}
+
+.button.active {
+    color: black; 
+    background-color: transparent; 
+    border-radius: 4px; 
+}
+
+@media screen and (max-width: 768px) {
+    .bottom-header {
+        display: flex; 
+    }
+}
