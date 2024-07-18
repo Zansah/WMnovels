@@ -31,6 +31,8 @@ body {
     transition: color 0.3s ease, background-color 0.3s ease;
 }
 
+
+
 /* Dark Mode */
 body.dark-mode .bottom-header {
     background-color: #2f2f2f; 
@@ -42,8 +44,9 @@ body.dark-mode .button {
 
 .icon {
     display: block;
-    font-size: 24px;
+    font-size: 22px;
     transition: color 0.3s ease;
+    margin-bottom: 5px;
 }
 
 /* Default Mode Icon Color */
