@@ -77,7 +77,6 @@ body.dark-mode .button:hover span {
 
 .button:hover {
     color: black; 
-    background-color: transparent; 
     border-radius: 4px; 
 }
 
