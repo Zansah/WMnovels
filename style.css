@@ -87,6 +87,20 @@ body.dark-mode .button:hover span {
     border-radius: 4px; 
 }
 
+
+.button:focus .icon {
+    outline: 2px solid darkgreen; 
+    outline-offset: 4px; 
+    padding: 2px; 
+    border-radius: 50%; 
+}
+
+.button:focus {
+    outline: none;
+}
+
+
+
 @media screen and (max-width: 768px) {
     .bottom-header {
         display: flex; 
