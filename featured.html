@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f4efa66e1d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Featured Page</title>
+</head>
+<body>
+
+    <div class="featured-header">
+        <div class="william-logo-box">
+            <img src="William.png" alt="William Logo" class="william-logo">
+        </div>
+        <div class="magnifying-glass-container">
+            <i class="fa-solid fa-magnifying-glass" id="magnifying-glass"></i>
+        </div>
+    </div>
+
+    <div class="sliding-page" id="sliding-page">
+        <button id="close-btn"><i class="fa-solid fa-arrow-left fa-2x"></i></button>
+    </div>
+
+    <!-- Slider Box -->
+    <div class="slider">
+        <div class="slides">
+            <div class="slide" id="slide1">Slide 1 Content</div>
+            <div class="slide" id="slide2">Slide 2 Content</div>
+            <div class="slide" id="slide3">Slide 3 Content</div>
+        </div>
+        <div class="navigation-dots">
+            <span class="dot" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+    </div>
+
+    <div class="grid-container">
+        <div class="container">
+            <div class="card">
+                <h3 class="t"></h3>
+                <p class="t"></p>
+            </div>
+            <div class="card">
+                <h3 class="t"></h3>
+                <p class="t"></p>
+            </div>
+            <div class="card">
+                <h3 class="t"></h3>
+                <p class="t"></p>
+            </div>
+            <div class="card">
+                <h3 class="t"></h3>
+                <p class="t"></p>
+            </div>
+            <div class="card">
+                <h3 class="t"></h3>
+                <p class="t"></p>
+            </div>
+            <div class="card">
+                <h3 class="t"></h3>
+                <p class="t"></p>
+            </div>
+            <div class="card">
+                <h3 class="t"></h3>
+                <p class="t"></p>
+            </div>
+            <div class="card">
+                <h3 class="t"></h3>
+                <p class="t"></p>
+            </div>
+            <div class="card">
+                <h3 class="t"></h3>
+                <p class="t"></p>
+            </div>
+            <div class="card">
+                <h3 class="t"></h3>
+                <p class="t"></p>
+            </div>
+            <div class="card">
+                <h3 class="t"></h3>
+                <p class="t"></p>
+            </div>
+            <div class="card">
+                <h3 class="t"></h3>
+                <p class="t"></p>
+            </div>
+        </div>
+    </div>
+    <div>
+
+        <div class="box">
+            <div class="header">
+                <div>
+                    <div class="header-title">Most Popular</div>
+                    <div class="subheader">Selected by the users</div>
+                </div>
+                <button class="button-more">More</button>
+            </div>
+            <div class="recent-book-container">
+                <div class="recent-book"></div>
+                <div class="recent-book"></div>
+                <div class="recent-book"></div>
+                <div class="recent-book"></div>
+                <div class="recent-book"></div>
+                <div class="recent-book"></div>
+                <div class="recent-book"></div>
+                <div class="recent-book"></div>
+            </div>
+        </div>>
+    
+
+    <style>
+        .box {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            max-width: 490px;
+            background-color: whitesmoke;
+            margin: 15px;
+            border-radius: 10px;
+            margin-bottom: 100px;
+            padding-right: 40px;
+        }
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .subheader {
+            font-size: 14px;
+            color: gray;
+            margin-top: 5px;
+        }
+        .button-more {
+            height: 40px;
+            width: 80px;
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            border: solid 1px darkgreen;
+            font-size: 14px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .button-more:hover{
+            background-color: darkgreen;
+            color: white;
+        }
+        .recent-book-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            width: 100%;
+        }
+        .recent-book {
+            background-color: white;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+            font-size: 18px;
+            width: 120px;
+            text-align: center;
+            border-radius: 10px;
+        }
+    </style>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
