@@ -90,93 +90,87 @@
         </div>
     </div>
     <div>
-
-        <div class="box">
-            <div class="header">
-                <div>
-                    <div class="header-title">Most Popular</div>
-                    <div class="subheader">Selected by the users</div>
+    <div class="most-popular-box">
+        <div class="most-container">
+            <div class="most-header">
+                <div class="header-content">
+                    <h2>Most Popular</h2>
+                    <p>Based on the data from users</p>
                 </div>
-                <button class="button-more">More</button>
+                <button class="more-button">More</button>
             </div>
-            <div class="recent-book-container">
-                <div class="recent-book"></div>
-                <div class="recent-book"></div>
-                <div class="recent-book"></div>
-                <div class="recent-book"></div>
-                <div class="recent-book"></div>
-                <div class="recent-book"></div>
-                <div class="recent-book"></div>
-                <div class="recent-book"></div>
+            <div class="content">
+                <!-- Data from users will be displayed here -->
             </div>
-        </div>>
-    
-
+        </div>
+    </div>
     <style>
-        .box {
-            padding: 20px;
+
+        .most-popular-box{
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 90%;
-            max-width: 490px;
-            background-color: whitesmoke;
-            margin: 15px;
-            border-radius: 10px;
+            justify-content: center;
             margin-bottom: 100px;
-            padding-right: 40px;
         }
-        .header {
-            width: 100%;
+
+        .most-container {
+            width: 92%;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            height: 400px;
+
+        }
+
+        .most-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 20px;
-        }
-        .header-title {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .subheader {
-            font-size: 14px;
-            color: gray;
-            margin-top: 5px;
-        }
-        .button-more {
-            height: 40px;
-            width: 80px;
+            padding: 16px;
             background-color: white;
+            color: black;
+        }
+
+        .most-header p {
+            color: rgb(169, 169, 169);
+        }
+
+        .most-header-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .most-header h2 {
+            margin: 0;
+        }
+
+        .most-header p {
+            margin: 4px 0 0 0;
+            font-size: 0.9em;
+        }
+
+        .more-button {
+            background-color: #fff;
             color: black;
             border: none;
-            border-radius: 5px;
+            padding: 8px 16px;
+            border-radius: 4px;
             cursor: pointer;
+            transition: background-color 0.3s ease;
             border: solid 1px darkgreen;
-            font-size: 14px;
-            transition: background-color 0.3s, color 0.3s;
         }
-        .button-more:hover{
-            background-color: darkgreen;
-            color: white;
+
+        .more-button:hover {
+            background-color: #e6e6e6;
         }
-        .recent-book-container {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-            width: 100%;
-        }
-        .recent-book {
-            background-color: white;
-            color: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 150px;
-            font-size: 18px;
-            width: 120px;
-            text-align: center;
-            border-radius: 10px;
+
+        .content {
+            padding: 16px;
         }
     </style>
+
+        
+            
 
 
 
